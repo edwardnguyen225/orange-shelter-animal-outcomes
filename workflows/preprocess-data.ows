@@ -6,9 +6,10 @@
 		<node id="2" name="Feature Statistics" qualified_name="Orange.widgets.data.owfeaturestatistics.OWFeatureStatistics" project_name="Orange3" version="" title="Feature Statistics" position="(412.30081300813004, 365.0406504065041)" />
 		<node id="3" name="Rank" qualified_name="Orange.widgets.data.owrank.OWRank" project_name="Orange3" version="" title="Rank" position="(411.48780487804896, 491.86991869918705)" />
 		<node id="4" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Select Columns" position="(409.8617886178863, 627.6422764227642)" />
-		<node id="5" name="Impute" qualified_name="Orange.widgets.data.owimpute.OWImpute" project_name="Orange3" version="" title="Impute" position="(558.2357723577237, 626.8292682926831)" />
-		<node id="6" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWTable" project_name="Orange3" version="" title="Data Table (1)" position="(696.040650406504, 626.8292682926831)" />
-		<node id="7" name="Save Data" qualified_name="Orange.widgets.data.owsave.OWSave" project_name="Orange3" version="" title="Save Data" position="(839.1300813008128, 627.6422764227641)" />
+		<node id="5" name="Impute" qualified_name="Orange.widgets.data.owimpute.OWImpute" project_name="Orange3" version="" title="Impute" position="(530.5934959349594, 629.268292682927)" />
+		<node id="6" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWTable" project_name="Orange3" version="" title="Data Table (1)" position="(809.0487804878047, 629.2682926829272)" />
+		<node id="7" name="Save Data" qualified_name="Orange.widgets.data.owsave.OWSave" project_name="Orange3" version="" title="Save Data" position="(957.0162601626016, 632.520325203252)" />
+		<node id="8" name="Edit Domain" qualified_name="Orange.widgets.data.oweditdomain.OWEditDomain" project_name="Orange3" version="" title="Edit Domain" position="(659.861788617886, 630.8943089430891)" />
 	</nodes>
 	<links>
 		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
@@ -16,8 +17,9 @@
 		<link id="2" source_node_id="0" sink_node_id="3" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
 		<link id="3" source_node_id="0" sink_node_id="4" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
 		<link id="4" source_node_id="4" sink_node_id="5" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
-		<link id="5" source_node_id="5" sink_node_id="6" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
-		<link id="6" source_node_id="6" sink_node_id="7" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="annotated_data" sink_channel_id="data" />
+		<link id="5" source_node_id="6" sink_node_id="7" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="annotated_data" sink_channel_id="data" />
+		<link id="6" source_node_id="5" sink_node_id="8" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="7" source_node_id="8" sink_node_id="6" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
 	</links>
 	<annotations />
 	<thumbnail />
@@ -137,6 +139,37 @@ TmFtZZRLA3V1YmF1Lg==
 </properties>
 		<properties node_id="6" format="literal">{'auto_commit': False, 'color_by_class': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x00\x00\x00\x00\x00\x19\x00\x00\x07\x7f\x00\x00\x047\x00\x00\x00\x01\x00\x00\x006\x00\x00\x07\x7f\x00\x00\x047\x00\x00\x00\x00\x02\x00\x00\x00\x07\x80\x00\x00\x00\x00\x00\x00\x005\x00\x00\x07\x7f\x00\x00\x047', 'select_rows': True, 'show_attribute_labels': True, 'show_distributions': True, 'stored_selection': {'rows': [], 'columns': []}, 'stored_sort': [], '__version__': 1}</properties>
 		<properties node_id="7" format="literal">{'add_type_annotations': True, 'auto_save': True, 'controlAreaVisible': True, 'filter': 'Tab-separated values (*.tab)', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x00\x01\x00\x00\x00\x19\x00\x00\x00\xfe\x00\x00\x00\xbb\x00\x00\x00\x01\x00\x00\x005\x00\x00\x00\xfe\x00\x00\x00\xbb\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x00\x01\x00\x00\x005\x00\x00\x00\xfe\x00\x00\x00\xbb', 'stored_name': 'train.tab', 'stored_path': '/Users/ntnh/Documents/orange-shelter-animal-outcomes/data', '__version__': 3}</properties>
+		<properties node_id="8" format="pickle">gASVgQYAAAAAAAB9lCiMFF9kb21haW5fY2hhbmdlX2hpbnRzlH2UjAtDYXRlZ29yaWNhbJSMDkFn
+ZXVwb25PdXRjb21llCiMBzAgeWVhcnOUjAUxIGRheZSMBzEgbW9udGiUjAYxIHdlZWuUjAcxIHdl
+ZWtzlIwGMSB5ZWFylIwGMiBkYXlzlIwIMiBtb250aHOUjAcyIHdlZWtzlIwHMiB5ZWFyc5SMBjMg
+ZGF5c5SMCDMgbW9udGhzlIwHMyB3ZWVrc5SMBzMgeWVhcnOUjAY0IGRheXOUjAg0IG1vbnRoc5SM
+BzQgd2Vla3OUjAc0IHllYXJzlIwGNSBkYXlzlIwINSBtb250aHOUjAc1IHdlZWtzlIwHNSB5ZWFy
+c5SMBjYgZGF5c5SMCDYgbW9udGhzlIwHNiB5ZWFyc5SMCDcgbW9udGhzlIwHNyB5ZWFyc5SMCDgg
+bW9udGhzlIwHOCB5ZWFyc5SMCDkgbW9udGhzlIwHOSB5ZWFyc5SMCTEwIG1vbnRoc5SMCDEwIHll
+YXJzlIwJMTEgbW9udGhzlIwIMTEgeWVhcnOUjAgxMiB5ZWFyc5SMCDEzIHllYXJzlIwIMTQgeWVh
+cnOUjAgxNSB5ZWFyc5SMCDE2IHllYXJzlIwIMTcgeWVhcnOUjAgxOCB5ZWFyc5SMCDE5IHllYXJz
+lIwIMjAgeWVhcnOUdJQph5SGlF2UjBFDYXRlZ29yaWVzTWFwcGluZ5RdlChoBYwMVW5kZXIgMSB5
+ZWFylIaUaAaMDFVuZGVyIDEgeWVhcpSGlGgHjAxVbmRlciAxIHllYXKUhpRoCIwMVW5kZXIgMSB5
+ZWFylIaUaAmMDFVuZGVyIDEgeWVhcpSGlGgKjAkxLTMgeWVhcnOUhpRoC4wMVW5kZXIgMSB5ZWFy
+lIaUaAyMDFVuZGVyIDEgeWVhcpSGlGgNjAxVbmRlciAxIHllYXKUhpRoDowJMS0zIHllYXJzlIaU
+aA+MDFVuZGVyIDEgeWVhcpSGlGgQjAxVbmRlciAxIHllYXKUhpRoEYwMVW5kZXIgMSB5ZWFylIaU
+aBKMCTEtMyB5ZWFyc5SGlGgTjAxVbmRlciAxIHllYXKUhpRoFIwMVW5kZXIgMSB5ZWFylIaUaBWM
+DFVuZGVyIDEgeWVhcpSGlGgWjAk0LTYgeWVhcnOUhpRoF4wMVW5kZXIgMSB5ZWFylIaUaBiMDFVu
+ZGVyIDEgeWVhcpSGlGgZjAxVbmRlciAxIHllYXKUhpRoGowJNC02IHllYXJzlIaUaBuMDFVuZGVy
+IDEgeWVhcpSGlGgcjAxVbmRlciAxIHllYXKUhpRoHYwJNC02IHllYXJzlIaUaB6MDFVuZGVyIDEg
+eWVhcpSGlGgfjAo3LTEwIHllYXJzlIaUaCCMDFVuZGVyIDEgeWVhcpSGlGghjAo3LTEwIHllYXJz
+lIaUaCKMDFVuZGVyIDEgeWVhcpSGlGgjjAo3LTEwIHllYXJzlIaUaCSMDFVuZGVyIDEgeWVhcpSG
+lGgljAo3LTEwIHllYXJzlIaUaCaMDFVuZGVyIDEgeWVhcpSGlGgnjAkxMSsgeWVhcnOUhpRoKIwJ
+MTErIHllYXJzlIaUaCmMCTExKyB5ZWFyc5SGlGgqjAkxMSsgeWVhcnOUhpRoK4wJMTErIHllYXJz
+lIaUaCyMCTExKyB5ZWFyc5SGlGgtjAkxMSsgeWVhcnOUhpRoLowJMTErIHllYXJzlIaUaC+MCTEx
+KyB5ZWFyc5SGlGgwjAkxMSsgeWVhcnOUhpRlhZSGlGFzjBZfbWVyZ2VfZGlhbG9nX3NldHRpbmdz
+lH2UjCBPcmFuZ2Uud2lkZ2V0cy5kYXRhLm93ZWRpdGRvbWFpbpRoA5OUaARoMSmHlIGUfZQojBFm
+cmVxdWVudF9hYnNfc3BpbpRLCowRZnJlcXVlbnRfcmVsX3NwaW6UR0AkAAAAAAAAjA1uX3ZhbHVl
+c19zcGlulEsKjA5uYW1lX2xpbmVfZWRpdJSMCTExKyB5ZWFyc5R1c4wSY29udHJvbEFyZWFWaXNp
+YmxllIiMEW91dHB1dF90YWJsZV9uYW1llIwAlIwTc2F2ZWRXaWRnZXRHZW9tZXRyeZRDQgHZ0MsA
+AwAAAAAAAAAAABkAAAd/AAAENwAAAAAAAAA1AAAHfwAABDcAAAAAAAAAAAeAAAAAAAAAADUAAAd/
+AAAEN5SMC19fdmVyc2lvbl9flEsEdS4=
+</properties>
 	</node_properties>
 	<session_state>
 		<window_groups />
